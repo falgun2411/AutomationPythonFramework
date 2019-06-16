@@ -15,6 +15,7 @@ class HomePage():
         self.Select_Title_Kredit = "Kredit"
 
     # Method: to Select leasing title directly
+    # Additional for later: We can also use the double click event on button with Action Class
     def click_xpath_LeasingPage(self, xpath_Leasing_Title):
         self.driver.find_element_by_xpath(self.xpath_Leasing_Title).click()
 
@@ -25,7 +26,8 @@ class HomePage():
 
     # Method: to Select leasing title from the List of options on Main page
     # Later Scope ACHIEVED: A dynamic method will be needed to check all drop down options and click from that option
-    # Input Type: String (CategotyName) , results: CategoryName is clicked
+    # Input Type: String (CategoryName) , results: CategoryName is clicked
+    # Additional for later: We can also use the double click event on button with Action Class
     def select_title(self, Select_Title_Leasing):
         TitleTobeClicked = Select_Title_Leasing
         CategoryList = self.driver.find_elements_by_css_selector("h2.funnel__products__title")

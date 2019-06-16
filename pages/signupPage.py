@@ -59,6 +59,7 @@ class SignUpPage():
          print("newsletter checkbox is selected.......OK")
 
     # method to submit entered details
+    # Additional for later: We can also use the double click event on button with Action Class
     def submit_details_on_signupPage(self):
         print("Submitting - details")
         element_present = EC.presence_of_element_located((By.XPATH, self.xpath_Button_signupPage))

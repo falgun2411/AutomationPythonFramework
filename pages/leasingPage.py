@@ -69,6 +69,7 @@ class LeasingPage():
         print("Option:- 12 Monate : is selected.....OK")
 
     # Method: to submit the filled details
+    # Additional for later: We can also use the double click event on button with Action Class
     def submit_details(self):
         print("Clicking submit button........")
         element_present = EC.presence_of_element_located((By.XPATH, self.xpath_button_type_submit))
